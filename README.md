@@ -50,4 +50,4 @@ Modellizzare la struttura di un database per memorizzare tutti i dati riguardant
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
-- lorem
+- SELECT COUNT(`id`) FROM `teachers` WHERE `phone` is NULL;
