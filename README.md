@@ -46,7 +46,7 @@ Modellizzare la struttura di un database per memorizzare tutti i dati riguardant
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
-- lorem
+- SELECT COUNT(`id`) FROM `departments`;
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
