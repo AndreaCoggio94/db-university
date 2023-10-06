@@ -42,7 +42,7 @@ Modellizzare la struttura di un database per memorizzare tutti i dati riguardant
 
 6. Selezionare tutti i corsi di laurea magistrale (38)
 
-- lorem
+- SELECT \* FROM `degrees` WHERE `level` = 'magistrale';
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
