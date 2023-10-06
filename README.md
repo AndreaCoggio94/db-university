@@ -28,7 +28,7 @@ Modellizzare la struttura di un database per memorizzare tutti i dati riguardant
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni
 
-- lorem
+- SELECT \* FROM `students` WHERE `date_of_birth` < '1993-01-01';
 
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
    laurea (286)
