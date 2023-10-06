@@ -20,7 +20,7 @@ Modellizzare la struttura di un database per memorizzare tutti i dati riguardant
 
 1. Selezionare tutti gli studenti nati nel 1990 (160)
 
-- lorem
+- SELECT \* FROM `students` WHERE `date_of_birth` LIKE '1990%';
 
 2. Selezionare tutti i corsi che valgono più di 10 crediti (479)
 
