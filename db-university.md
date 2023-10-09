@@ -27,7 +27,7 @@ Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate 
 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui
    sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e
    nome
-   - lorem
+   - SELECT `students`.`surname`, `students`.`name`, `degrees`._, `departments`._ FROM `departments` JOIN `degrees` ON `department_id` = `departments`.`id` JOIN `students` ON `degree_id` = `degrees`.`id` ORDER BY `students`.`surname`, `students`.`name`;
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
    - lorem
 6. Selezionare tutti i docenti che insegnano nel Dipartimento di
