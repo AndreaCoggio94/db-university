@@ -29,7 +29,7 @@ Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate 
    nome
    - SELECT `students`.`surname`, `students`.`name`, `degrees`._, `departments`._ FROM `departments` JOIN `degrees` ON `department_id` = `departments`.`id` JOIN `students` ON `degree_id` = `degrees`.`id` ORDER BY `students`.`surname`, `students`.`name`;
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
-   - lorem
+   - SELECT `degrees`._, `courses`._ , `teachers`.`surname`, `teachers`.`name` FROM `degrees` JOIN `courses` ON `degree_id`= `degrees`.`id` JOIN `course_teacher` ON `course_id` = `courses`.`id` JOIN `teachers` ON `teacher_id` = `teachers`.`id` ORDER BY `degrees`.`name`;
 6. Selezionare tutti i docenti che insegnano nel Dipartimento di
    Matematica (54)
    - lorem
