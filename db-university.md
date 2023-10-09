@@ -21,7 +21,7 @@ Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate 
    - SELECT `students`.`name` , `students`.`surname` , `degrees`.`name` FROM `students` JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` WHERE `degrees`.`name` = "Corso di Laurea in Economia";
 2. Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di
    Neuroscienze
-   - lorem
+   - SELECT `departments`.`name` `department_name`, `degrees`.`level` `degree_level` , `courses`.`name` `course_name` FROM `departments` JOIN `degrees` ON `department_id` = `departments`.`id` JOIN `courses` ON `degree_id` = `degrees`.`id` WHERE `departments`.`name` = "Dipartimento di Neuroscienze" AND `degrees`.`level` = "magistrale";
 3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
    - lorem
 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui
