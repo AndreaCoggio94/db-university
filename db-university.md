@@ -36,4 +36,4 @@ Utilizzando lo stesso database di ieri, eseguite le query in allegato. Caricate 
 7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti
    per ogni esame, stampando anche il voto massimo. Successivamente,
    filtrare i tentativi con voto minimo 18.
-   - lorem
+   - SELECT `students`.`surname`, `students`.`name`, `exams`.`id` `exam_id`, `exam_student`.`vote` `vote`, `courses`.`id` `course_id` FROM `students` JOIN `exam_student` ON `student_id` = `students`.`id` JOIN `exams` ON `exam_id` = `exams`.`id` JOIN `courses` ON `course_id` = `courses`.`id` ORDER BY `courses`.`id`, `students`.`surname`, `students`.`name`;
